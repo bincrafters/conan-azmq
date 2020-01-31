@@ -17,7 +17,7 @@ class AZMQConan(ConanFile):
     _build_subfolder = "build_subfolder"
 
     def requirements(self):
-        self.requires.add('zmq/4.2.2@bincrafters/stable')
+        self.requires.add('zeromq/4.3.2')
         self.requires.add('boost_system/1.66.0@bincrafters/stable')
         self.requires.add('boost_log/1.66.0@bincrafters/stable')
         self.requires.add('boost_date_time/1.66.0@bincrafters/stable')
