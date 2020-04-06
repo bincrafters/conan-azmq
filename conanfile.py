@@ -9,7 +9,6 @@ class AZMQConan(ConanFile):
     homepage = "https://github.com/zeromq/azmq"
     description = "C++ language binding library integrating ZeroMQ with Boost Asio"
     license = "BSL-1.0"
-    exports = ["LICENSE.md"]
     exports_sources = ["CMakeLists.txt"]
     generators = "cmake"
     settings = "os", "arch", "compiler", "build_type"
