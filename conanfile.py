@@ -16,17 +16,17 @@ class AZMQConan(ConanFile):
     _build_subfolder = "build_subfolder"
 
     def requirements(self):
-        self.requires.add('zeromq/4.3.2')
-        self.requires.add('boost_system/1.66.0@bincrafters/stable')
-        self.requires.add('boost_log/1.66.0@bincrafters/stable')
-        self.requires.add('boost_date_time/1.66.0@bincrafters/stable')
-        self.requires.add('boost_thread/1.66.0@bincrafters/stable')
-        self.requires.add('boost_chrono/1.66.0@bincrafters/stable')
-        self.requires.add('boost_regex/1.66.0@bincrafters/stable')
-        self.requires.add('boost_random/1.66.0@bincrafters/stable')
-        self.requires.add('boost_asio/1.66.0@bincrafters/stable')
-        self.requires.add('boost_logic/1.66.0@bincrafters/stable')
-        self.requires.add("cmake_findboost_modular/1.66.0@bincrafters/stable")
+        self.requires('zeromq/4.3.2')
+        self.requires('boost_system/1.66.0@bincrafters/stable')
+        self.requires('boost_log/1.66.0@bincrafters/stable')
+        self.requires('boost_date_time/1.66.0@bincrafters/stable')
+        self.requires('boost_thread/1.66.0@bincrafters/stable')
+        self.requires('boost_chrono/1.66.0@bincrafters/stable')
+        self.requires('boost_regex/1.66.0@bincrafters/stable')
+        self.requires('boost_random/1.66.0@bincrafters/stable')
+        self.requires('boost_asio/1.66.0@bincrafters/stable')
+        self.requires('boost_logic/1.66.0@bincrafters/stable')
+        self.requires("cmake_findboost_modular/1.66.0@bincrafters/stable")
 
     def source(self):
         source_url = "https://github.com/zeromq/azmq"
